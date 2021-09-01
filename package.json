@@ -18,5 +18,9 @@
   "homepage": "https://github.com/alejahndro02/apiProductos#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "standard": "^16.0.3"
   }
 }
