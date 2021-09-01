@@ -1,0 +1,22 @@
+{
+  "name": "apiproductos",
+  "version": "1.0.0",
+  "description": "Esta aplicacion es un crud donde los datos de almacenarán en una base de datos no rrelacional",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejahndro02/apiProductos.git"
+  },
+  "author": "Alejahndro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alejahndro02/apiProductos/issues"
+  },
+  "homepage": "https://github.com/alejahndro02/apiProductos#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
