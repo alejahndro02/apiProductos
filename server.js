@@ -9,5 +9,14 @@ const connectDb = require('./db/db');
 const { appConfig, dbConfig } = require('./config');
 const app = express();
 
-connectDb(dbConfig);
-app.listen(appConfig.port, () => console.log(`Escuchando por el puerto ${appConfig.port}`))
+async function initApp(appConfig, dbConfig) {
+    try {
+        await connectDb(dbConfig);
+        app.listen(appConfig.port, () => console.log(`Escuchando por el puerto ${appConfig.port}`))
+    } catch (err) {
+        console.log(err);
+        process.exit(0)
+    }
+
+}
+initApp(appConfig, dbConfig);
