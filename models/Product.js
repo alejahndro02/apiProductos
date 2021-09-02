@@ -1,11 +1,10 @@
 const mongoose = require('mongoose');
-const { Schema } = mongoose.Schema;
+const Schema = mongoose.Schema;
 //Se crea una collection 
-const ProductSchema = new Schema({
+const ProductSchema = Schema({
     name: String,
     size: Number,
     unitaryPrice: Number,
-    imgUrl: String,
     description: String
 }, {
     //Se registra la hora y si hubo alguna modificacion 
