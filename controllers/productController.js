@@ -7,8 +7,8 @@ async function addProduct(req, res) {
         const product = Product({ name, size, unitaryPrice, description });
 
         if (req.file) {
-            const { fileName } = req.file;
-            Product.setImgUrl(fileName);
+            const { filename } = req.file;
+            product.setImgUrl(filename);
         }
 
         //se guardan los datos en la base con el metodo save()
