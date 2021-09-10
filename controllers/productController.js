@@ -1,10 +1,10 @@
-const Product = require('../models/Product');
+const Producto = require('../models/Product');
 
 async function addProduct(req, res) {
     try {
         const { name, size, unitaryPrice, description } = req.body;
         //Se hace una instacia del modelo para poder guardar la ruta 
-        const product = Product({ name, size, unitaryPrice, description });
+        const product = Producto({ name, size, unitaryPrice, description });
 
         if (req.file) {
             const { filename } = req.file;
